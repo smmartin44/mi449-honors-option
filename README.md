@@ -29,3 +29,8 @@ component so I can just pass in the specific data for that item, but the compone
 Will avoid repetition.
 - **Menu Item**: Same goes for the menu items - each item will have a name, image, price, description, all in
 the same format so it would work well for a component.
+
+### To-Do Notes for 2/10
+- Write code for the 5 separate pages
+- Create component for header/navbar, footer
+- Create light mockups for future development
