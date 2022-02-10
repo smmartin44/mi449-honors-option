@@ -31,6 +31,6 @@ Will avoid repetition.
 the same format so it would work well for a component.
 
 ### To-Do Notes for 2/10
-- Write code for the 5 separate pages
+- Write code for the 5 separate page outlines, get familiar with React
 - Create component for header/navbar, footer
-- Create light mockups for future development
+- Create light wireframes for future development
