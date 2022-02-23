@@ -31,6 +31,8 @@ Will avoid repetition.
 the same format so it would work well for a component.
 
 ### To-Do Notes for 2/10
-- Write code for the 5 separate page outlines, get familiar with React
-- Create component for header/navbar, footer
+- Linking between 2 pages
+- Create component for header
 - Create light wireframes for future development
+- Research some ways to deploy a React website (Netlify)
+-- document what the process would look like (stretch goal)
