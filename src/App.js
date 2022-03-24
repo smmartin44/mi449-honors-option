@@ -10,6 +10,7 @@ import Menu from './pages/Menu'
 import Shop from './pages/Shop'
 import Header from './Header'
 import Route from './components/Route'
+import Footer from './components/Footer'
 
 function App () {
   return (
@@ -30,6 +31,7 @@ function App () {
       <Route path='/shop'>
         <Shop />
       </Route>
+      <Footer />
     </div>
   )
 }

@@ -35,10 +35,10 @@ const Menu = () => {
   })
 
   return (
-    <div style={{ width: '60%', margin: '0 auto' }}>
+    <div style={{ width: '75%', margin: '0 auto' }}>
       <h1>Coffee Menu</h1>
       <p>Below you will find our most popular drinks on the menu.</p>
-      <div style={{ display: 'flex', 'justify-content': 'space-between', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', 'justify-content': 'space-around', flexWrap: 'wrap' }}>
         {objects}
       </div>
     </div>

@@ -1,0 +1,15 @@
+.shopping-cart {
+    background-color: rgb(238, 226, 226);
+    padding: 30px;
+    margin: 30px;
+}
+
+.cart-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
