@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <h4>Contact Us</h4>
-      <p>phone | (555) 555-5555 email | coffeeshop@gmail.com</p>
+      <p>phone - (555) 555-5555 | email - coffeeshop@gmail.com</p>
     </div>
   )
 }
