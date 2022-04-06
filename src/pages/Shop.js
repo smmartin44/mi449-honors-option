@@ -3,7 +3,11 @@ import ShopItem from '../components/ShopItem'
 import '../components/Shop.css'
 /* We simply can use an array and loop and print each user */
 const Shop = () => {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([
+    { itemName: 'Coffee Mug', quantity: 0, price: 10.50 },
+    { itemName: 'Coffee Beans', quantity: 0, price: 20 },
+    { itemName: 'Bean T-Shirt', quantity: 0, price: 4 }
+  ])
   const [cartTotal, setCartTotal] = useState(0)
 
   useEffect(() => {
@@ -13,7 +17,7 @@ const Shop = () => {
   const total = () => {
     let totalVal = 0
     for (let i = 0; i < cart.length; i++) {
-      totalVal += cart[i].price
+      totalVal += (cart[i].quantity * cart[i].price)
     }
     setCartTotal(totalVal)
   }
@@ -42,12 +46,26 @@ const Shop = () => {
     }
   ]
 
-  const addToCart = (el) => {
-    setCart([...cart, el])
+  const addToCart = (index) => {
+    console.log(index)
+    const newCart = [...cart]
+    newCart[index].quantity++
+    setCart(newCart)
   }
 
-  const shoppingCart = cart.map((el) => (
-    <p key={el.id} className='cart-item'>{el.name}</p>
+  const removeFromCart = (index) => {
+    console.log(index)
+    const newCart = [...cart]
+    newCart[index].quantity--
+    setCart(newCart)
+  }
+
+  const shoppingCart = cart.map((el, index) => (
+    <div key={el.id}>
+      <p key={el.id} className='cart-item'>{el.itemName} : {el.quantity}</p>
+      <button className='add-button' onClick={() => removeFromCart(index)}>Remove</button>
+      <button className='remove-button' onClick={() => addToCart(index)}>Add</button>
+    </div>
   ))
 
   const itemsAvailable = shopItems.map((el) => (
@@ -58,7 +76,6 @@ const Shop = () => {
         description={el.description}
         image={el.imageURL}
       />
-      <button onClick={() => addToCart(el)}>Add to Cart</button>
     </div>
   ))
 
@@ -75,7 +92,7 @@ const Shop = () => {
         <div className='shopping-cart'>
           <h2>Shopping Cart</h2>
           <p> {shoppingCart} </p>
-          <p> {cartTotal}</p>
+          <p>Total: ${cartTotal}</p>
         </div>
       </div>
     </div>

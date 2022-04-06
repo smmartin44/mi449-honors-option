@@ -8,8 +8,25 @@
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    margin: 0;
 }
 
 h2 {
     margin-bottom: 20px;
+}
+
+.add-button {
+    background-color: rgb(198, 230, 201);
+    border: 2px solid rgb(123, 156, 126);
+    margin: 10px 5px 20px 5px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.remove-button {
+    background-color: rgb(231, 172, 172);
+    border: 2px solid rgb(179, 72, 72);
+    margin: 10px 5px 20px 5px;
+    font-size: 11px;
+    font-style: italic;
 }
