@@ -63,12 +63,10 @@ const Shop = () => {
   const shoppingCart = cart.map((el, index) => (
     <div key={el.id}>
       <p key={el.id} className='cart-item'>{el.itemName} : {el.quantity}</p>
-      <button className='add-button' onClick={() => removeFromCart(index)}>Remove</button>
-      <button className='remove-button' onClick={() => addToCart(index)}>Add</button>
     </div>
   ))
 
-  const itemsAvailable = shopItems.map((el) => (
+  const itemsAvailable = shopItems.map((el, index) => (
     <div key={el.id}>
       <ShopItem
         name={el.name}
@@ -76,6 +74,8 @@ const Shop = () => {
         description={el.description}
         image={el.imageURL}
       />
+      <button className='add-button' onClick={() => removeFromCart(index)}>Remove</button>
+      <button className='remove-button' onClick={() => addToCart(index)}>Add</button>
     </div>
   ))
 
