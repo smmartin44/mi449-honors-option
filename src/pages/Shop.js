@@ -56,7 +56,9 @@ const Shop = () => {
   const removeFromCart = (index) => {
     console.log(index)
     const newCart = [...cart]
-    newCart[index].quantity--
+    if (newCart[index].quantity !== 0) {
+      newCart[index].quantity--
+    }
     setCart(newCart)
   }
 
