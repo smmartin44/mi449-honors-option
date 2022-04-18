@@ -1,4 +1,5 @@
 import React from 'react'
+import './Link.css'
 
 const Link = ({ className, href, children }) => {
   const onClick = (event) => {

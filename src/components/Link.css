@@ -1,0 +1,10 @@
+a {
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(192, 45, 26);
+}
