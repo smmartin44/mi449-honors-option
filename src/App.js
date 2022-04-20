@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Home from './pages/Home'
 import About from './pages/About'
-import Contact from './pages/Contact'
 import Menu from './pages/Menu'
 import Shop from './pages/Shop'
 import Header from './Header'
@@ -21,9 +20,6 @@ function App () {
       </Route>
       <Route path='/about'>
         <About />
-      </Route>
-      <Route path='/contact'>
-        <Contact />
       </Route>
       <Route path='/menu'>
         <Menu />

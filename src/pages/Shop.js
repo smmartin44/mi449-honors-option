@@ -82,7 +82,7 @@ const Shop = () => {
   ))
 
   return (
-    <div style={{ width: '75%', margin: '0 auto', display: 'flex', justifyContent: 'space-around' }}>
+    <div style={{ width: '90%', margin: '0 auto', display: 'flex', justifyContent: 'space-around' }}>
       <div>
         <h1>Shop</h1>
         <p>Love our coffee? Buy some matching merchandise! You can add any of these items to your shopping cart.</p>

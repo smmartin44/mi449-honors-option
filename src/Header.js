@@ -12,7 +12,6 @@ function Header () {
           <Nav className='me-auto'>
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
-            <Link href='/contact'>Contact</Link>
             <Link href='/menu'>Menu</Link>
             <Link href='/shop'>Shop</Link>
           </Nav>

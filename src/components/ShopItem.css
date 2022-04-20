@@ -1,8 +1,10 @@
 .item {
-    width: 250px;
+    width: 300px;
+    height: 400px;
     background-color: rgb(246, 247, 242);
     text-align: left;
-    padding: 20px;
+    padding: 30px;
+    margin-right: 30px;
     border-radius: 10px;
     border: 2px solid rgb(214, 216, 208);
     box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
